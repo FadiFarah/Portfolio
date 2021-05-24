@@ -1,0 +1,569 @@
+body,html {
+  margin: 0;
+  font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+  background: #000;
+  text-align: center;
+}
+ul { 
+  margin: 30px auto 0; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  width: 600px;
+  text-align: center;
+}
+li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 15px 0;
+}
+.navbar-clicks {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+.navbar-clicks:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navbar-clicks:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+.navbar-clicks:hover{
+  text-decoration-line: none;
+  color:white;
+}
+@media screen and (max-height: 300px) {
+	ul {
+		margin-top: 40px;
+	}
+}
+
+
+
+
+/* Headings */
+.small-heading{
+  font-family: 'Krona One', sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  color: #181818;
+  opacity: 0.4;
+}
+.medium-heading{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+.big-heading{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+.section-heading{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+/* Sections */
+.colored-section{
+  background-color: #3b3b3b;
+  color: rgb(36, 36, 36);
+}
+.white-section{
+  background-color: #fff;
+  color: black;
+}
+/* Navigation Bar */
+.navbar{
+  z-index: 1;
+  padding:0 0 0.5rem;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+}
+.navbar-brand{
+  font-family: 'Rajdhani';
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 15px 20px;
+}
+.nav-item{
+  padding: 0 25px;
+}
+.nav-link{
+  font-size: 1.2rem;
+  font-family: 'Rajdhani';
+  font-weight: 100;
+}
+.navbar-items-block{
+  margin: 0 auto;
+}
+.mobile-navbar{
+  display: none;
+}
+/* Title Section */
+#title{
+  background-color: #ffffff;
+background-image: url("https://www.transparenttextures.com/patterns/crissxcross.png");
+background-attachment: fixed;
+height: 1000px;
+}
+#title .container-fluid{
+  padding: 20% 15% 20%;
+  text-align: left;
+}
+.title-image{
+  display: none;
+}
+
+.intro-details{
+  text-align: center;
+}
+/* Features Section */
+
+#features{
+  position: relative;
+}
+.feature-title{
+  font-family: 'Krona One';
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.feature-icon{
+  margin-bottom: 5%;
+  color: #97b3b4;
+  font-size: 3rem;
+}
+.feature-icon:hover{
+  color: #000000;
+}
+p{
+  color: #8f8f8f;
+  padding:0 25%;
+  font-family: 'Rajdhani';
+}
+
+
+/* _____________________About Section_________________ */
+#about .container-fluid{
+  padding: 0% 0%;
+  width: 100%;
+  text-align: left;
+}
+.about-image{
+  height: 1100px;
+  
+  background-image: url("../images/Screenshot_20200429-190934_Video\Player.jpg");
+  background-position:center bottom;
+}
+.about-img{
+  display: none;
+}
+.about-details{
+  padding-top: 200px;
+  padding-left: 80px;
+}
+.about-title{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.hover-underline-animation{
+  font-size: 40px;
+  display: inline-block;
+  position: relative;
+
+  color: #000000;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2.2px;
+  bottom: 0px;
+  top:93px;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.hover-underline-animation:hover +h1 {
+  visibility: hidden;
+}
+
+.about-description{
+  line-height: 1.3rem;
+}
+.about-description div{
+  padding-top: 20px;
+  max-width: 800px;
+}
+.about-personal-details{
+  margin-top: 50px;
+  border-top:1px solid rgb(7, 7, 7); 
+}
+
+.about-personal-details h4{
+   display: inline-block;
+   font-size:1.3rem;
+   font-family:'Rajdhani';
+}
+.about-personal-details span{
+  font-family:'Source Sans Pro'
+}
+.skill{
+  margin-top: 40px;
+}
+.html,.css,.javascript,.node{
+  margin-top: 30px;
+  position: relative;
+}
+.css{
+  top: 80%;
+}
+.javascript{
+  top:160%;
+}
+.node{
+  top:240%
+}
+.progress-header{
+  position: absolute;
+  
+  font-family:'Rajdhani';
+}
+.progress{
+  width:50%;
+  height:3px;
+  position:absolute;
+  top:20px;
+}
+.sub-progress{
+  background-color:black;
+  position:absolute;
+  height:3px;
+  top:20px;
+}
+
+/* _____________________Contact Section_________________ */
+#contact .container-fluid{
+  background: linear-gradient(47deg, #000000, #000000, #fff);
+  background-size: 200% 350%;
+  -webkit-animation: AnimationName 6s ease infinite;
+  -moz-animation: AnimationName 6s ease infinite;
+  -o-animation: AnimationName 6s ease infinite;
+  animation: AnimationName 6s ease infinite;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+}
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
+}
+.contact-title{
+  position: relative;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  top: 200px;
+  right: 1.2%;
+  
+}
+.contact-title:before{
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 1px;
+
+  top:180%;
+  left: 40%;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.contact-form{
+  height: 700px;
+  background-color: white;
+  text-align: left;
+}
+
+.contact-left{
+  background-color: white;
+  padding-top: 100px;
+  padding-left: 12%;
+  padding-bottom: 50px;
+}
+.contact-right{
+  background-color: rgb(236, 236, 236);
+  padding-top: 100px;
+}
+
+.contact-left h1{
+  color: #4e4d4d;
+  font-weight: 700;
+}
+.contact-left h2{
+  margin-top: 40px;
+  margin-left: 5px;
+}
+.contact-left span{
+  font-family: 'Source Sans Pro';
+  color: #6e6e6e;
+  margin-left: 5px;
+}
+.contact-right h1{
+  color: #4e4d4d;
+  font-weight: 700;
+}
+.form-group{
+  padding: 0 10%;
+}
+
+/* _____________________Portfolio Section_______________________ */
+#portfolio{
+  height: 100%;
+  padding-bottom: 100px;
+  padding-top: 200px;
+  background-color: rgb(255, 255, 255);
+
+}
+.portfolio-header{
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro';
+  text-align: center;
+}
+.portfolio-sub-header{
+  margin-top: 20px;
+  word-spacing: 0.1rem;
+  letter-spacing: 0.3rem;
+}
+#portfolio hr{
+  background-color: #000;
+  margin-top: 70px ;
+  width: 70%;
+}
+.portfolio-row{
+  margin-top: 70px;
+}
+.portfolio-card{
+  padding-bottom: 50px;
+}
+
+.card-image{
+  width: 100%;
+  height: 300px;
+  cursor:pointer;
+  transition: 700ms;
+}
+.card-image:hover{
+  transform: scale(1.07)
+}
+.card-details{
+  padding:20px 15px;
+  height: 120px;
+  text-align: left;
+  background-color: white;
+  box-shadow: 0px 10px 40px grey;
+}
+.card-header{
+  font-size: 30px;
+  font-family: 'Rajdhani';
+  font-weight: 700;
+  background-color: white;
+  text-transform:capitalize;
+  border: none;
+  padding:0;
+}
+.card-subject{
+  color: rgb(121, 182, 251);
+  background-color: white;
+  text-transform:capitalize;
+}
+.card-date{
+  font-family:'Rajdhani';
+}
+.carousel{
+  z-index: 1;
+  padding-top: 150px;
+  left:0;
+  right: 0;
+  top:0;
+  position:fixed;
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  width: 100%;
+  height: 120%;
+  transition:500ms;
+}
+.carousel:hover{
+  opacity:1;
+}
+.carousel-image{
+  height: 700px;
+  width: 50%;
+}
+
+/* _____________________Footer Section_______________________ */
+
+#footer{
+  
+  background-color: black;
+}
+.footer-icon{
+  padding: 1%;
+  color: rgb(192, 190, 190);
+}
+.footer-icon:hover{
+  color: #414141;
+}
+#footer .container-fluid{
+  padding: 1% 15% 0;
+}
+
+@media (max-width:991px){
+  .title-image{
+    position: static;
+    width: 100%;
+    display: initial;
+  }
+  .intro{
+    background-image: unset;
+  }
+  .intro-details{
+    position: static ;
+    bottom: 40%;
+  }
+  #title{
+    text-align: center;
+  }
+  #title .container-fluid{
+    padding: 40% 15% 30%;
+  }
+  .big-heading{
+    font-size: 2rem;
+  }
+  .small-heading{
+    font-size: 0.7rem;
+  }
+  #about .container-fluid{
+    padding: 0% 0% 10%;
+  }
+  .skill{
+    padding-bottom: 200px;
+  }
+  .portfolio-card{
+    
+  }
+  .card-image{
+    width:50%;
+  }
+  .card-details{
+    width: 50%;
+    margin: auto;
+  }
+  .carousel{
+    padding-top: 250px;
+  }
+  .carousel-image{
+    height: 600px;
+    width: 70%;
+  }
+ 
+}
+@media (min-width:991px) and (max-width:1040px){
+  #title .container-fluid{
+    padding: 30% 15% 40%;
+    text-align: left;
+  }
+  
+}
+@media (min-width:1040px) and (max-width:1300px){
+  #title .container-fluid{
+    padding: 30% 15% 30%;
+    text-align: left;
+  }
+}
+@media (max-width:768px){
+  .about-img{
+    position: absolute;
+    z-index: 0;
+    display:block;
+    justify-content: center;
+    left: 70%;
+    top: 5%;
+    width: 230px;
+    height: 250px;
+    border-radius: 0 0 0 10%;
+  }
+  .about-image{
+    display: none;
+  }
+  .pc-navbar{
+    display: none;
+  }
+  .mobile-navbar{
+    display: inherit;
+  }
+  .mobile-navbar div ul li{
+    list-style: inherit;
+    display: table;
+  }
+  .navbar-list-btn{
+    position: fixed;
+    top: 1.5%;
+    left: 90%;
+    background-color: rgb(187, 187, 187);
+  }
+  .card-image{
+    width:70%;
+  }
+  .card-details{
+    width: 70%;
+    margin: auto;
+  }
+  .carousel{
+    padding-top:300px;
+  }
+  .carousel-image{
+    height: 400px;
+    width: 70%;
+  }
+
+}
+
